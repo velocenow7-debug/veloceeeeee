@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
   <script src="script.js" defer></script>
+   <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
 </head>
 <body>
 
@@ -40,9 +41,10 @@
 
 
     <!-- ✅ Background Video -->
-    <video class="bg-video" autoplay loop muted playsinline>
-      <source src="video.mp4" type="video/mp4">
-    </video>
+    <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="fallback.jpg">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
 
     <div class="hero" id="home">
           
@@ -65,7 +67,7 @@
     <h2>Our Services</h2>
     <div class="services-container">
       <div class="service">
-        <h3>Web Design</h3>
+        <h3 style="border-bottom:blue;">Web Design</h3>
         <p>Beautiful, responsive designs that engage your audience.</p>
       </div>
       <div class="service">
@@ -78,7 +80,8 @@
       </div>
     </div>
   </section>
-  <section class="portfolio">
+
+<section class="portfolio">
   <h2>Portfolio</h2>
 
   <div class="project-card">
@@ -97,6 +100,9 @@
   </div>
 </section>
 
+
+
+
   <section id="contact">
     <h2>Contact Us</h2>
     <form action="https://api.web3forms.com/submit" method="POST">
@@ -108,20 +114,10 @@
 </form>
   </section>
 
-
-
-
-
-
-
   <footer>
     <p>&copy; 2025 Veloce Web Development. All rights reserved.</p>
   </footer>
   
 </body>
 </html>
-
-
-
-
 
